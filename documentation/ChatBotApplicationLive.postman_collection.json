@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "aa84560b-0f55-4584-b96d-945ce8439654",
+		"name": "ChatBotApplicationLive",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User Save Live",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://protected-eyrie-36117.herokuapp.com/user/save?username=Bob Anderson",
+					"protocol": "https",
+					"host": [
+						"protected-eyrie-36117",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"user",
+						"save"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "Bob Anderson"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Chatbot Live",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://protected-eyrie-36117.herokuapp.com/chatbot/1?username=Bob Anderson&location=Manhattan",
+					"protocol": "https",
+					"host": [
+						"protected-eyrie-36117",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"chatbot",
+						"1"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "Bob Anderson"
+						},
+						{
+							"key": "location",
+							"value": "Manhattan"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

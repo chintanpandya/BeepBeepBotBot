@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "e9e82aed-145a-40c5-90d2-edb2f5283a02",
+		"name": "ChatBotApplicationLocal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ChatBot",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/chatbot/1?username=Bob Anderson&location=Manhattan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"chatbot",
+						"1"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "Bob Anderson"
+						},
+						{
+							"key": "location",
+							"value": "Manhattan"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User save",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/user/save?username=Bob Anderson",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"save"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "Bob Anderson"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
